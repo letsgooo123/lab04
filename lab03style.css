@@ -1,0 +1,285 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+header, footer {
+    width: 100%;
+}
+
+#login,
+#ad,
+#post {
+    background-color: #0e00a6;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(15% - 7px);
+    margin-right: 20px;
+}
+
+#login {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+#post {
+    margin-left: auto;
+}
+
+
+#top_header {
+    background-color: #0e00a6;
+    color: white;
+    padding: 20px;
+}
+
+#top_header #title h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#top_header #title p {
+    font-size: 16px;
+}
+
+#navi {
+    text-align: right;
+}
+
+#navi > li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+#navi > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 60px;
+}
+
+#navi ul {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #0e00a6;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#navi li:hover ul {
+    display: block;
+}
+
+#navi ul li {
+    display: block;
+    margin-bottom: 7px;
+}
+
+#navi ul li a {
+    padding: 5px 10px;
+    color: white;
+}
+
+#navi li:hover a {
+    background-color: white;
+    color: #0e00a6;
+}
+
+
+#ad {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#ad article {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #0e00a6;
+    padding: 10px;
+}
+
+#ad article:nth-child(1) {
+    margin-bottom: 20px;
+    margin-left: auto;
+    background-color: #fefff8;
+}
+
+#ad article:nth-child(2) {
+    margin-bottom: 20px;
+    margin-left: auto;
+    background-color: #fefff8;
+}
+
+
+#login {
+    background-color: #0e00a6;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login form {
+    margin-bottom: 10px;
+}
+
+#login label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#login input {
+    margin-bottom: 10px;
+    width: 85%;
+    padding: 5px 10px;
+}
+
+#login .between-group{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#login input[type="submit"],
+#login input[type="button"] {
+    width: 48%;
+    padding: 10px;
+    background-color: white;
+    color: #0e00a6;
+    border: none;
+    cursor: pointer;
+}
+
+#login input[type="submit"]:hover,
+#login input[type="button"]:hover {
+    background-color: #cccccc;
+    color: white;
+}
+
+
+#ad {
+    background-color: #fefff8;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ad article {
+    background-color: #fefff8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+#ad article p {
+    margin-bottom: 10px;
+}
+
+#ad article img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#post {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 50%;
+}
+
+#post .card {
+    background-color: #fefff8;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 2px solid #0e00a6;
+}
+
+#post .card header {
+    margin-bottom: 20px;
+}
+
+#post .card .content {
+    display: flex;
+    align-items: center;
+}
+
+#post .card figure {
+    margin-right: 20px;
+}
+
+#post .card p {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#post .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+#post .card figure img {
+    margin-right: 20px;
+}
+
+#post article {
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #0e00a6;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+}
+
+#foot ul {
+    list-style-type: none;
+}
+
+#foot ul li {
+    display: inline-block;
+    margin-left : 80px;
+    margin-right: 80px;
+}
+
+#foot ul li a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,49 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2310403_이채영</title>
+</head>
+<body>
+    <h1>동아리 가입 양식_이채영</h1>
+    <form>
+        <label for="name">이름:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="department">학부/학과:</label><br>
+        <select id="department" name="department">
+            <option value="software_engineering">소프트웨어학부</option>
+            <option value="management">경영학부</option>
+            <option value="mechanical_engineering">기계공학과</option>
+            <option value="statistics">통계학과</option>
+            <option value="chemistry">화학과</option>
+            <!-- 추가적인 학부/학과 옵션들 -->
+        </select><br><br>
+        
+        <fieldset>
+            <legend>학년:</legend>
+            <label><input type="radio" name="grade" value="1"> 1학년</label>
+            <label><input type="radio" name="grade" value="2"> 2학년</label>
+            <label><input type="radio" name="grade" value="3"> 3학년</label>
+            <label><input type="radio" name="grade" value="4"> 4학년</label>
+        </fieldset><br>
+        
+        <label for="student_id">학번:</label><br>
+        <input type="text" id="student_id" name="student_id" pattern="[0-9]{8}" required><br><br>
+
+        <label for="email">이메일:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">전화번호:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required><br><br>
+        
+        <label for="motivation">가입동기:</label><br>
+        <textarea id="motivation" name="motivation" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소하기">
+    </form>
+</body>
+</html>
